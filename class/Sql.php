@@ -1,11 +1,5 @@
 <?php
 
-//bash/git init
-//online/criar novo repositório e copiar https
-//git remote add origin https://github.com/catiameskita/php7-dao.git
-
-//git pull origin master - puxar do git online para o PC
-
 class Sql extends PDO{
 
 
@@ -21,7 +15,7 @@ class Sql extends PDO{
 
         foreach ($parameters as $key => $value){
 
-            $this->setParam($key, $value);
+            $this->setParam($statement, $key, $value);
 
         }
     }
