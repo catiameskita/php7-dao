@@ -8,17 +8,26 @@
 
 require_once ('config.php');
 
-/*$sql = new Sql();
-
-$usuarios = $sql->select('SELECT * FROM tb_usuarios' );
-
-echo json_encode($usuarios);*/
-
-$root = new Usuario();
-
+//carrega um usuario
+/*$root = new Usuario();
 $root->loadById(1);
+Echo $root;*/
 
-Echo $root;
+//carrega a lista de usuarios
+/*$list = Usuario::getList();
+echo json_encode($list);*/
+
+//carrega a lista de usuarios pesquisados por um índice
+
+/*$search = Usuario::search('a');
+echo json_encode($search);*/
+
+
+$usuario = new Usuario();
+$usuario->login('Mariana', '65431');
+Echo $usuario;
+
+
 
 
 
