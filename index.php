@@ -22,13 +22,26 @@ echo json_encode($list);*/
 /*$search = Usuario::search('a');
 echo json_encode($search);*/
 
+//login de usuario
+/*$usuario = new Usuario();
+$usuario->login('Mariana', '654321');
+Echo $usuario;*/
+
+//Inserir novo usuario
+/*$aluno = new Usuario("Sofia", "54687");
+$aluno->insert();
+echo $aluno;*/
+
+//Update Usuario
 
 $usuario = new Usuario();
-$usuario->login('Mariana', '65431');
-Echo $usuario;
 
+/*$usuario->loadById(4);
 
+$usuario->update("Marianinha","777777");
 
+echo $usuario;*/
 
+$usuario->loadById(1);
 
-
+$usuario->update('Joca', '333');
