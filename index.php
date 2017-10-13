@@ -33,15 +33,13 @@ $aluno->insert();
 echo $aluno;*/
 
 //Update Usuario
-
-$usuario = new Usuario();
-
-/*$usuario->loadById(4);
-
+/*$usuario = new Usuario();
+$usuario->loadById(4);
 $usuario->update("Marianinha","777777");
-
 echo $usuario;*/
 
-$usuario->loadById(1);
+//Delete Usuario
 
-$usuario->update('Joca', '333');
+$usuario = new Usuario();
+$usuario->loadById(4);
+$usuario->delete();
